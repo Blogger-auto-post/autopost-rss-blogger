@@ -8,11 +8,11 @@ credentials = google.auth.credentials.Credentials.from_service_account_file('pat
 blogger = build('blogger', 'v3', credentials=credentials)
 
 # The ID of your blog can be found in the URL of your blog's homepage (e.g. https://YOUR_BLOG_ID.blogspot.com/)
-blog_id = 'YOUR_BLOG_ID'
+blog_id = '5996827985750087258'
 
 while True:
     # Get the RSS feed from the website
-    feed_url = 'https://www.example.com/feed'
+    feed_url = 'https://www.abplive.com/home/feed'
     feed = feedparser.parse(feed_url)
 
     # Iterate through the items in the RSS feed
