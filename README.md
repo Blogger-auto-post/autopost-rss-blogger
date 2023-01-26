@@ -1,4 +1,4 @@
-# autopost-rss-blogger
+## autopost-rss-blogger
 
 
 Here is an example of code using Python and the feedparser library to get the RSS feed from a website and post it to a Blogspot blog using the Blogger API, and then repeat the process every 30 minutes:
