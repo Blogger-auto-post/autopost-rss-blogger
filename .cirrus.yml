@@ -1,14 +1,13 @@
-# .cirrus.yml
-
-task:
-  instance:
-    image: ubuntu:20.04
-  script:
-    - apt-get update
-    - apt-get install -y python3.9
-
-
-task:
-  - script:
-      - pip install --upgrade google-api-python-client feedparser
-      - python post_rss_feed_to_blogger.py
+1	# .cirrus.yml
+2	
+3	tasks:
+4	  - name: install dependencies
+5	    instance:
+6	      image: ubuntu:20.04
+7	    script:
+8	      - apt-get update
+9	      - apt-get install -y python3.9
+10	  - name: run script
+11	    script:
+12	      - pip install --upgrade google-api-python-client feedparser
+13	      - python post_rss_feed_to_blogger.py
