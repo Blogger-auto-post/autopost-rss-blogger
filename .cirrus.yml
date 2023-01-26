@@ -1,0 +1,6 @@
+# .cirrus.yml
+
+task:
+  - script:
+      - pip install --upgrade google-api-python-client feedparser
+      - python post_rss_feed_to_blogger.py
