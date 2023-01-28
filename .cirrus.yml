@@ -17,14 +17,17 @@ task:
        - sudo ln -sf /usr/bin/python3 /usr/bin/python
        - git config --global user.name "Sushrut1101"
        - git config --global user.email "guptasushrut@gmail.com"
+       
+       - cd ~
 
- 
+       - pip install --upgrade google-api-python-client feedparser
 
        - cd ~
-       - apt-get update
-       - apt-get install -y python3-pip
-       - apt-get install -y python3.9
-       - pip install --upgrade google-api-python-client feedparser
+       - git clone https://github.com/Blogger-auto-post/autopost-rss-blogger.git
+       - cd ~/ost-rss-blogger
+  
+    
+  
        - python post_rss_feed_to_blogger.py
 
 
