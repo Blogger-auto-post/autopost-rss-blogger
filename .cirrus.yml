@@ -6,6 +6,5 @@ task:
     - apt-get install -y python3.9
     - name: run script
       script:
-        - pip install --upgrade google-api-python-client
-        feedparser
+        - pip install --upgrade google-api-python-client feedparser
         - python post_rss_feed_to_blogger.py
