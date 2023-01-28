@@ -6,7 +6,7 @@ task:
 Script:
 - apt-get update
 - apt-get install -y python3.9
-
+- pip install --upgrade google-api-python-client feedparser
 
 
 
