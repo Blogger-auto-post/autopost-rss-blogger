@@ -1,10 +1,15 @@
-task: Ajay
-  instance:
-    image: ubuntu:20.04
-  script:
-    - apt-get update
-    - apt-get install -y python3.9
-    - name: run script
-      script:
-        - pip install --upgrade google-api-python-client feedparser
-        - python post_rss_feed_to_blogger.py
+task:
+  name: "Setting Up, Syncing, Building and Uploading..."
+  timeout_in: 240m  
+  container:
+      image: ubuntu:20.04
+  Build-Env-Setup_script:
+       - apt-get update
+       - apt-get install -y python3.9
+       - pip install --upgrade google-api-python-client feedparser
+       - python post_rss_feed_to_blogger.py
+
+
+
+
+
