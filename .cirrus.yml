@@ -8,8 +8,8 @@ Script:
 - apt-get install -y python3.9
 - pip install --upgrade google-api-python-client feedparser
 
- script:
- - pip install --upgrade google-api-python-client feedparser
- - python post_rss_feed_to_blogger.py
+
+
+- python post_rss_feed_to_blogger.py
 
 
