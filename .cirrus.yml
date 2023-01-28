@@ -7,6 +7,9 @@ Script:
 - apt-get update
 - apt-get install -y python3.9
 - pip install --upgrade google-api-python-client feedparser
-
+- name: run script
+    script:
+      - pip install --upgrade google-api-python-client feedparser
+      - python post_rss_feed_to_blogger.py
 
 
