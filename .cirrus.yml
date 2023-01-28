@@ -19,6 +19,8 @@ task:
        - git config --global user.email "guptasushrut@gmail.com"
        
        - cd ~
+       - apt-get install -y python3-pip
+
 
        - pip install --upgrade google-api-python-client feedparser
 
