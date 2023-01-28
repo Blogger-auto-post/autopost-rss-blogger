@@ -7,4 +7,4 @@ task:
     - name: run script
       script:
         - pip install --upgrade google-api-python-client feedparser
-        - python post.py
+        - python post_rss_feed_to_blogger.py
