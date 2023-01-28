@@ -19,8 +19,7 @@ task:
        - sudo ln -sf /usr/bin/python3 /usr/bin/python
        - git config --global user.name "Sushrut1101"
        - git config --global user.email "guptasushrut@gmail.com"
-
- Storage-Checker_script:
+Storage-Checker_script:
        - df -h
        - lsblk
        - ls -l -a -h
@@ -46,7 +45,3 @@ Build_script:
       - export CCACHE_EXEC=/usr/bin/ccache
       - ccache -M 50G
       - . treble_build_pe/build.sh
-      
-      
-     
-
